@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	html, body {
+		height: 100%;
+	}
+body {
+	margin: 0;
+	background-color: #F96099;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: spin 10s infinite linear;
+	}
+p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: courier;
+	font-weight: bolder;
+	font-size: 10vmin;
+}
+.pinkcq	{
+	width: 50vmin;
+	height: 50vmin;
+	background-color: #F13078;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	}
+.yellowbox {
+	width: 30vmin;
+	height: 50vmin;
+	background-color: #F9F060;
+	animation: spin 5s infinite linear;
+	}
+.lilac	{
+	width: 10vmin;
+	height: 10vmin;
+	background-color: #B391FE;
+	animation: spin 1s infinite linear;
+	}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+</style>
+</head>
+<body>
+<div class="pinkcq"></div>
+<div class="yellowbox"></div>
+<div class="lilac">
+	<p>howdy</p>
+</div>
+</body>
+</html>
