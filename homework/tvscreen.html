@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+<title></title>
+</head>
+<body>
+	<img id = "gifs" src = "">
+<script>
+ var gifs = [
+ "gifs/gif1.gif",
+ "gifs/gif2.gif",
+ "gifs/gif3.gif",
+ "gifs/gif4.gif",
+ "gifs/gif5.gif",
+ "gifs/gif6.gif",
+ "gifs/gif7.gif"
+ ];
+
+ var channels = 0;
+ document.onkeydown = function(event) {
+ 	if (event.key == "ArrowUp") {
+ 		
+ 		channels = channels + 1;
+ 		if (channels==7){
+ 			channels=0;
+ 		}
+ 	}
+
+ 	if (event.key == "ArrowDown") {
+ 		
+ 		channels = channels - 1;
+ 		if (channels==-1){
+ 			channels=7;
+ 		}
+ 	}
+  	document.getElementById("gifs").src = gifs [channels];
+  }
+
+
+</script>
+
+</body>
+</html>
